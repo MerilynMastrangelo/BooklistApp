@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-5 text-center text-dark"><i class="fa fa-book"></i> My BookList App</h1>
+        <div class="container mx-4">
+        <form id="book-form">
+            <label for="title" class="mt-4">Title</label>
+            <input type="text" id="title" class="form-control">
+            
+            <label for="author" class="mt-4">Author</label>
+            <input type="text" id="author" class="form-control">
+
+            <label for="isbn" class="mt-4">ISBN</label>
+            <input type="text" id="isbn" class="form-control">
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block mt-4 bg-dark">
+        </form>
+        <table class="table mt-5 table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
